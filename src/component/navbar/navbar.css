@@ -1,0 +1,16 @@
+.header-bg {
+    background: rgb(202, 199, 199);
+    position: fixed;
+    top: 0;
+    z-index: 11111;
+    height: 14vh;
+    width: 100%;
+    opacity: 0.9;
+}
+
+@media (max-width: 764px) {
+    nav{
+        background: rgb(202, 199, 199);
+        padding-bottom: 1rem;
+    }
+}

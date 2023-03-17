@@ -1,0 +1,63 @@
+footer{
+    background-image: linear-gradient(to bottom, rgba(104, 109, 155, 0.52), rgba(27, 12, 75, 0.73)),
+            url('../../assets/pray.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contain-form{
+    padding-top: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.text-area {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    background: transparent;
+    border: 2px solid rgb(252, 252, 252);
+    resize: none;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.submit > input {
+    width: fit-content;
+    border: none;
+    background: #ef4444;
+    border-radius: 1rem;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    transition: 400ms all ease;
+}
+
+.submit > input:hover{
+    background: #f32c2c;
+}
+
+@media (max-width: 764px) {
+    input, 
+    textarea {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .submit>input {
+        width: 80%;
+        display: grid;
+        place-items: center;
+    }
+}
