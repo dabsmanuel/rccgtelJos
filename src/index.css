@@ -3,10 +3,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    background-image: url('./assets/download.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.869) 0%, rgb(255, 113, 113) 100%, rgb(247, 116, 116) 100%);
 }
 
 

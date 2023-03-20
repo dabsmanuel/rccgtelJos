@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const Services = () => {
   return (
@@ -18,7 +17,6 @@ const Services = () => {
                 <div className="md:w-2/3">
                     <h2 className=" font-medium mb-2">PUSH Prayers</h2>
                     <p className="text-gray-500 text-sm mb-2 md:ml-2">11:00 PM - 2:00 AM</p>
-                    <Link to="/PUSH-Prayer" className="text-red-500 font-medium">Event Details</Link>
                 </div>
             </div>
             <div className="bg-white rounded-lg shadow-md space-x-2 p-4 md:mb-0 w-full md:flex md:items-center">
@@ -28,7 +26,6 @@ const Services = () => {
                 <div className="md:w-2/3">
                     <h2 className=" font-medium mb-2">Sunday Service</h2>
                     <p className="text-gray-500 text-sm mb-2 md:ml-2">8:00 AM - 12:00 PM</p>
-                    <Link to="/sunday-service" className="text-red-500 font-medium">Event Details</Link>
                 </div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-4 space-x-2 md:mb-0 w-full md:flex md:items-center">
@@ -38,7 +35,6 @@ const Services = () => {
                 <div className="md:w-2/3">
                     <h2 className="  font-medium mb-2">Digging Deep</h2>
                     <p className="text-gray-500 text-sm mb-2 md:ml-2">5:00 PM - 6:00 PM</p>
-                    <Link to="/sunday-service" className="text-red-500 font-medium">Event Details</Link>
                 </div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-4 space-x-2 md:mb-0 w-full md:flex md:items-center">
@@ -48,7 +44,6 @@ const Services = () => {
                 <div className="md:w-2/3">
                     <h2 className=" font-medium mb-2">Faith Clinic</h2>
                     <p className="text-gray-500 text-sm mb-2 md:ml-2">5:00 PM - 6:00 PM</p>
-                    <Link to="/sunday-service" className="text-red-500 font-medium">Event Details</Link>
                 </div>
             </div>
         </div>

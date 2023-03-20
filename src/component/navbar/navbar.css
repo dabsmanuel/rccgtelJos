@@ -1,5 +1,5 @@
 .header-bg {
-    background: rgb(202, 199, 199);
+    background: rgb(2, 1, 51);
     position: fixed;
     top: 0;
     z-index: 11111;
@@ -10,7 +10,7 @@
 
 @media (max-width: 764px) {
     nav{
-        background: rgb(202, 199, 199);
+        background: rgb(16, 70, 9);
         padding-bottom: 1rem;
     }
 }

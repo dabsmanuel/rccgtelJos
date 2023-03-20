@@ -41,8 +41,8 @@ export const Address = [
         title: "RCCG - The Everlasting Love Parish",
         street: "Sen. ID Gyang Street ",
         landmark: "Rayfield, Jos South",
-        phone: "080*****",
-        email: "Rccgteljos@gmail.com"
+        phone: "08037002250",
+        email: "Rccgteljos@gmail.com, rccgtel@gmail.com"
     }
 ]
 
