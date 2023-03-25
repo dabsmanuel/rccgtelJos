@@ -42,7 +42,7 @@ export const Address = [
         street: "Sen. ID Gyang Street ",
         landmark: "Rayfield, Jos South",
         phone: "08037002250",
-        email: "Rccgteljos@gmail.com, rccgtel@gmail.com"
+        email: "Rccgteljos@gmail.com, rccgtel@gmail.com "
     }
 ]
 

@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <section>
         <div className="inline-flex items-center justify-center w-full mt-16">
-            <hr className="w-64 h-1 my-8 bg-blue-500 border-0 rounded dark:bg-blue-700" />
+            <hr className="w-64 h-1 my-8 bg-blue-500 dark:bg-blue-700" />
             <div className="absolute px-4 -translate-x-1/2 bg-white left-1/2">
                 <h2 className='uppercase font-bold text-red-600 text-2xl'>Services</h2>
             </div>
