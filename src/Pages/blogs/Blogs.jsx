@@ -12,7 +12,7 @@ const Blogs = () => {
   return (
     <section className="my-32">
         <div>
-            <h1 className="auto pt-1 pl-4 pr-5 font-bold text-2xl text-white text-center">Welcome to RCCG - TEL Blog</h1>
+            <h1 className="auto pt-1 pl-4 pr-5 font-bold text-2xl text-blue-800 text-center">Welcome to RCCG - TEL Blog</h1>
 
             <div className="md:grid-cols-3 grid">
                 {
