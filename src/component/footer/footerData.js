@@ -26,12 +26,6 @@ export const quickLinks = [
         title: "Contact",
         link: "/contact"
     },
-
-    {
-        id: 5,
-        title: "Donate",
-        link: "/"
-    }
 ]
 
 export const Address = [

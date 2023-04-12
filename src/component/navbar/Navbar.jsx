@@ -88,9 +88,6 @@ export default function NavBar() {
                             <li className="text-white">
                                 <Link to="/contact" onClick={handleClick} className={`px-4 py-2 hover:text-red-500 ${location.pathname === '/contact' ? 'text-red-500' : ''}`}>Contact</Link>
                             </li>
-                            <li className="text-white">
-                                <Link to="/contact" onClick={handleClick} className={`px-4 py-2 hover:text-red-500${location.pathname === '/donate' ? 'text-red-500' : ''}`}>Donate</Link>
-                            </li>
                         </ul>
                     </div>
                 </div>
