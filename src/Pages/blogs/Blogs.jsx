@@ -1,10 +1,13 @@
 import UseFetch from "../../hooks/UseFetch";
 import { Link } from "react-router-dom";
+import Loader from "../../component/loader/Loader"
 
 const Blogs = () => {
     const {loading, error, data } = UseFetch('http://localhost:1337/api/rccg-tel-blogs?populate=*')
 
-    if (loading) return <p>Loading....</p>
+    if (loading) {
+        return <Loader />;
+    }
     if (error) return <p>Error!!!!! :(</p>
 
     console.log(data)
@@ -18,7 +21,7 @@ const Blogs = () => {
                 {
                 data.map(rccgTelBlog => {
                     return(
-                        <div key={rccgTelBlog.id} className="blog-card bg-white my-4 mr-12 ml-12 auto pb-12 shadow-lg border rounded">
+                        <div key={rccgTelBlog.id} className="blog-card bg-white my-4 mr-12 ml-12 auto pb-12 shadow-lg border rounded hover:shadow-2xl">
                             <div className="rating">
                                 <img src={`http://localhost:1337${rccgTelBlog.attributes.photo.data[0].attributes.url}`} alt="church" />
                             </div>

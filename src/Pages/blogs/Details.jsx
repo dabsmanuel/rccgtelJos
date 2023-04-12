@@ -17,7 +17,7 @@ const Details = () => {
 
   return (
     <>
-        <div className='mt-32 auto pt-1 pl-10 pr-10 pb-20 text-white'>
+        <div className='mt-32 auto pt-1 pl-10 pr-10 pb-20'>
             <h2 className='text-center text-2xl lg:text-4xl pb-4'>{data.attributes.title}</h2>
             <div className='lg:flex justify-center space-x-3'>
                 <div>
@@ -26,7 +26,7 @@ const Details = () => {
                 <div>
                     <p>{data.attributes.content}</p>
                     <small className="underline semibold p-2">Publsihed: {data.attributes.date}</small>
-                    <Link to='/blogs' className="underline text-slate-700 semibold p-2">Back</Link>
+                    <Link to='/blogs' className="underline text-slate-700 semibold p-2 hover:text-slate-900 flex-col flex">Back</Link>
                 </div>
             </div>
         </div>

@@ -1,5 +1,9 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import "../../component/footer/form.css"
+import "./contact.css"
+import contactPhoto from '../../assets/contact.jpg'
+import Contactfile from './Contactfile';
 
 
 const Contact = () => {
@@ -17,17 +21,31 @@ const Contact = () => {
   };
 
   return (
-    <section className='mt-12 py-20 w-full px-6 overflow-hidden bg-white shadow-md sm:max-w-md sm:rounded-lg'>
-      <form className='container' ref={form} onSubmit={sendEmail}>
-        <input type="text" name="name" placeholder='Enter Name' className='border-blue-600 block w-full mt-1 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50' required />
-        <input type="email" name="email" placeholder='enter email' className='border-blue-600 block w-full mt-1 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50' required />
-        <input type="phone number" name="phone" placeholder='enter phone' className='border-blue-600 block w-full mt-1 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50' required />
-        <textarea name="message" placeholder='Enter your message' className='border-blue-600' />
-        <div className="submit">
-        <input type="submit" value="Send" className='text-white '  required />
-        </div>
-      </form>
+    <section className='mt-32 lg:w-1/2 w-11/12 mx-auto '>
+      <h1 className='text-white text-center text-4xl mb-16 font-bold'>Contact Us</h1>
+      <Contactfile/>
+      <div className='contact mb-16  overflow-hidden sm:rounded-lg'>
+      <div className="grid lg:grid-cols-2">
+        <div className="contain-form bg-white p-4" data-aos="fade-right">
+          <h3 className="text-2xl text-white font-bold pb-2 text-center lg:text-justify">Write us</h3>
+          <form className='' ref={form} onSubmit={sendEmail}>
+            <input type="text" name="user_name" placeholder='Name' required />
+            <input type="email" name="user_email" placeholder='Email' required />
+            <input type="Phone number" name="user_Phone" placeholder='Phone number' required />
+            <textarea name="message" placeholder='Your message' />
+            <div className="submit">
+              <input type="submit" value="Send" className='text-white'  required />
+            </div>
+          </form>
+      </div>
+      <div className="contact-image" data-aos="fade-left">
+        <img src={contactPhoto} alt="hands on phone" />
+      </div>
+      </div>
+      
+    </div>
     </section>
+    
   )
 }
 

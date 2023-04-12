@@ -18,8 +18,8 @@ const Footer = () => {
     }, [])
   return (
     <section>
-      <footer className='text-white'>
-        <div className="grid grid-cols-1 md:grid-cols-3 py-8 gap-6">
+      <footer className='text-white w-full mx-auto'>
+        <div className="grid grid-cols-1 md:grid-cols-2 py-8 m-auto lg:w-1/2">
           <div className="container p-8">
               <h1 className='text-2xl text-red-500 font-bold'>About Us</h1>
               <p>For the word of God is living and active. Sharper than any double-edged sword, it penetrates even to dividing soul and spirit, joints and marrow; it judges the thoughts and attitudes.</p>
@@ -49,17 +49,7 @@ const Footer = () => {
             </div>
  
           </div>
-          <div className="contain-form">
-            <h3 className="text-2xl text-red-500 font-bold pb-2 text-center lg:text-justify">Send In Your Prayer Requests</h3>
-            <form className=''>
-              <input type="text" name="user_name" placeholder='Enter Name' required />
-              <input type="email" name="user_email" placeholder='enter email' required />
-              <textarea name="message" placeholder='Enter your message' />
-              <div className="submit">
-              <input type="submit" value="Send" className='text-white'  required />
-              </div>
-            </form>
-          </div>
+          
           <div className="quicklinks pt-8 w-9/12 mx-auto">
               <h1 className="text-2xl text-red-500 font-bold pb-2">Quick Links</h1>
               {
@@ -69,7 +59,6 @@ const Footer = () => {
                       <div className='flex flex-col' >
                         <Link to={link} className='pb-4 underline'>{title}</Link>
                       </div>
-                      
                     </div>
                   )
                 })

@@ -1,0 +1,58 @@
+.contact-container{
+    background-image: linear-gradient(to bottom, rgba(50, 56, 107, 0.52), rgba(39, 31, 63, 0.521)), url('../../assets/worship.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.text-area {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    background: transparent;
+    border: 2px solid #3333;
+    resize: none;
+    color: #ffff;
+    margin: 0 auto;
+}
+
+.submit>input {
+    width: fit-content;
+    border: none;
+    background: #ef4444;
+    border-radius: 0.4rem;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    transition: 400ms all ease;
+}
+
+.submit>input:hover {
+    background: #f32c2c;
+}
+
+@media (max-width: 764px) {
+
+    input,
+    textarea {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .submit>input {
+        width: 80%;
+        display: grid;
+        place-items: center;
+    }
+}

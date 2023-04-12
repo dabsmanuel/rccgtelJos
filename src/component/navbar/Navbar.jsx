@@ -74,27 +74,22 @@ export default function NavBar() {
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <ul className="items-center justify-center font-semibold space-y-8 md:flex md:space-x-6 md:space-y-0">
+                        <ul className="items-center justify-between font-semibold space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="text-white">
-                                <Link to="/" onClick={handleClick} className={`px-4 py-2 rounded hover:bg-red-500 ${location.pathname === '/' ? 'bg-red-500' : ''}`}>Home</Link>
+                                <Link to="/" onClick={handleClick} className={`px-4 py-2  hover:text-red-500 ${location.pathname === '/' ? 'text-red-500' : ''}`}>Home</Link>
                             </li>
                             <li className="text-white">
-                                <Link to="/about" onClick={handleClick} className={`px-4 py-2 rounded hover:bg-red-500 ${location.pathname === '/about' ? 'bg-red-500' : ''}`}>About</Link>
+                                <Link to="/about" onClick={handleClick} className={`px-4 py-2 hover:text-red-500 ${location.pathname === '/about' ? 'text-red-500' : ''}`}>About</Link>
+                            </li>
+                          
+                            <li className="text-white">
+                                <Link to="/blog" onClick={handleClick} className={`px-4 py-2 hover:text-red-500 ${location.pathname === '/contact' ? 'text-red-500' : ''}`}>Blog</Link>
                             </li>
                             <li className="text-white">
-                                <Link to="/sermon" onClick={handleClick} className={`px-4 py-2 rounded hover:bg-red-500 ${location.pathname === '/sermon' ? 'bg-red-500' : ''}`}>Sermons</Link>
+                                <Link to="/contact" onClick={handleClick} className={`px-4 py-2 hover:text-red-500 ${location.pathname === '/contact' ? 'text-red-500' : ''}`}>Contact</Link>
                             </li>
                             <li className="text-white">
-                                <Link to="/pages" onClick={handleClick} className={`px-4 py-2 rounded hover:bg-red-500 ${location.pathname === '/pages' ? 'bg-red-500' : ''}`}>Pages</Link>
-                            </li>
-                            <li className="text-white">
-                                <Link to="/blog" onClick={handleClick} className={`px-4 py-2 rounded hover:bg-red-500 ${location.pathname === '/contact' ? 'bg-red-500' : ''}`}>Blog</Link>
-                            </li>
-                            <li className="text-white">
-                                <Link to="/contact" onClick={handleClick} className={`px-4 py-2 rounded hover:bg-red-500 ${location.pathname === '/contact' ? 'bg-red-500' : ''}`}>Contact</Link>
-                            </li>
-                            <li className="text-white">
-                                <Link to="/contact" onClick={handleClick} className={`px-4 py-2 rounded hover:bg-red-500${location.pathname === '/donate' ? 'bg-red-500' : ''}`}>Donate</Link>
+                                <Link to="/contact" onClick={handleClick} className={`px-4 py-2 hover:text-red-500${location.pathname === '/donate' ? 'text-red-500' : ''}`}>Donate</Link>
                             </li>
                         </ul>
                     </div>

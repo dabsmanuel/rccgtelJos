@@ -6,32 +6,31 @@ import {FiInstagram} from "react-icons/fi"
 export const quickLinks = [
     {
         id: 1,
-        title: 'Upcoming events',
-        link: "#"
+        title: 'Home',
+        link: "/"
     },
-
     {
         id: 2,
-        title: "About",
-        link: "/about"
+        title: 'About',
+        link: "about"
     },
 
     {
         id: 3,
-        title: "Sermons",
-        link: "/sermom"
+        title: "Blog",
+        link: "/usefetch"
     },
 
     {
         id: 4,
-        title: "Pages",
-        link: "/pages"
+        title: "Contact",
+        link: "/contact"
     },
 
     {
         id: 5,
-        title: "Contact",
-        link: "/contact"
+        title: "Donate",
+        link: "/"
     }
 ]
 
