@@ -47,13 +47,13 @@ export const socialMedia = [
     },
 
      {
-        id: 1,
+        id: 2,
         icon: <FiInstagram/>,
-        link: "https://instagram.com"
+        link: "https://instagram.com/rccgteljos?igshid=YmMyMTA2M2Y="
     },
 
      {
-        id: 1,
+        id: 3,
         icon: <AiFillTwitterCircle/>,
         link: "https://twitter.com"
     }

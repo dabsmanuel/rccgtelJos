@@ -25,7 +25,7 @@ const Details = () => {
                 </div>
                 <div>
                     <p>{data.attributes.content}</p>
-                    <small className="underline semibold p-2">Publsihed: {data.attributes.date}</small>
+                    <small className="underline semibold p-2">Published: {data.attributes.date}</small>
                     <Link to='/blogs' className="underline text-slate-700 semibold p-2 hover:text-slate-900 flex-col flex">Back</Link>
                 </div>
             </div>

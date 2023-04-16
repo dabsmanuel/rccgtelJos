@@ -21,9 +21,7 @@ const Footer = () => {
       <footer className='text-white w-full mx-auto'>
         <div className="grid grid-cols-1 md:grid-cols-2 py-8 m-auto lg:w-1/2">
           <div className="container p-8">
-              <h1 className='text-2xl text-red-500 font-bold'>About Us</h1>
-              <p>For the word of God is living and active. Sharper than any double-edged sword, it penetrates even to dividing soul and spirit, joints and marrow; it judges the thoughts and attitudes.</p>
-
+            <h1 className='text-red-500'>Contact Us</h1>
             {
               Address.map(({id, title, street, landmark, phone, email}) =>{
                 return(
